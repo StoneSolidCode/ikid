@@ -1,5 +1,5 @@
 //
-//  SecondViewController.swift
+//  DadViewController.swift
 //  ikid
 //
 //  Created by iguest on 10/26/18.
@@ -8,25 +8,27 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class DadViewController: UIViewController {
 
-    fileprivate var firstViewController : PunFirstViewController!
-    fileprivate var secondViewController : PunSecondViewController!
+    
+    
+    fileprivate var firstViewController : DadFirstViewController!
+    fileprivate var secondViewController : DadSecondViewController!
     
     fileprivate func firstBuilder() {
         if firstViewController == nil {
             firstViewController =
                 storyboard?
-                    .instantiateViewController(withIdentifier: "PunFirst")
-                as! PunFirstViewController
+                    .instantiateViewController(withIdentifier: "DadFirst")
+                as! DadFirstViewController
         }
     }
     fileprivate func secondBuilder() {
         if secondViewController == nil {
             secondViewController =
                 storyboard?
-                    .instantiateViewController(withIdentifier: "PunSecond")
-                as! PunSecondViewController
+                    .instantiateViewController(withIdentifier: "DadSecond")
+                as! DadSecondViewController
         }
     }
     
@@ -80,7 +82,17 @@ class SecondViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    
 
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+    }
+    */
 
 }
-

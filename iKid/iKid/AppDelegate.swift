@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  iKid
+//  ikid
 //
-//  Created by iguest on 10/23/18.
+//  Created by iguest on 10/26/18.
 //  Copyright © 2018 stonek9. All rights reserved.
 //
 

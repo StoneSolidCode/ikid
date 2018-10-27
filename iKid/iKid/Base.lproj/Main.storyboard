@@ -9,95 +9,273 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--First-->
+        <!--Good-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="ikid" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="First View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="KQZ-1w-vlD">
-                                <rect key="frame" x="112.5" y="312" width="150.5" height="43"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by FirstViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A5M-7J-77L">
-                                <rect key="frame" x="90.5" y="363" width="194.5" height="17"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bax-vs-Cnt">
+                                <rect key="frame" x="313" y="548" width="32" height="30"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="switchViews:" destination="9pv-A4-QxB" eventType="touchUpInside" id="bMz-nX-LvI"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="6BV-lF-sBN"/>
-                            <constraint firstItem="A5M-7J-77L" firstAttribute="top" secondItem="KQZ-1w-vlD" secondAttribute="bottom" constant="8" symbolic="YES" id="cfb-er-3JN"/>
-                            <constraint firstItem="A5M-7J-77L" firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="e1l-AV-tCB"/>
-                            <constraint firstAttribute="centerY" secondItem="KQZ-1w-vlD" secondAttribute="centerY" id="exm-UA-ej4"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="Bax-vs-Cnt" secondAttribute="trailing" constant="30" id="E8T-Ou-Wal"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="bottom" secondItem="Bax-vs-Cnt" secondAttribute="bottom" constant="40" id="ZeI-M9-USK"/>
+                            <constraint firstItem="Bax-vs-Cnt" firstAttribute="bottom" secondItem="PQr-Ze-W5v" secondAttribute="bottom" priority="1" constant="40" id="dYg-sC-Nt2"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Good" image="first" id="acW-dT-cKf"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="750" y="-320"/>
         </scene>
-        <!--Item-->
-        <scene sceneID="jja-W5-3SW">
+        <!--Good First View Controller-->
+        <scene sceneID="xQJ-Wc-O6L">
             <objects>
-                <viewController id="iwX-aQ-3Zw" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Qpp-uD-gQA">
+                <viewController storyboardIdentifier="GoodFirst" id="jXE-it-2wt" customClass="GoodFirstViewController" customModule="ikid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iSl-BR-5WV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="brain1" translatesAutoresizingMaskIntoConstraints="NO" id="RoA-rj-Q2v">
+                                <rect key="frame" x="17.5" y="67" width="340" height="173"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="340" id="UJn-Py-Me6"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="brain3" translatesAutoresizingMaskIntoConstraints="NO" id="Czc-RS-Cgg">
+                                <rect key="frame" x="17.5" y="435" width="340" height="157"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="340" id="Db7-3c-2Du"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="brain2" translatesAutoresizingMaskIntoConstraints="NO" id="jod-oH-wes">
+                                <rect key="frame" x="17.5" y="243.5" width="340" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="340" id="zWy-ZX-IxD"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="zk0-tg-GEd"/>
+                        <constraints>
+                            <constraint firstItem="RoA-rj-Q2v" firstAttribute="centerY" secondItem="iSl-BR-5WV" secondAttribute="centerY" constant="-180" id="9fQ-xK-Oi4"/>
+                            <constraint firstItem="Czc-RS-Cgg" firstAttribute="centerY" secondItem="iSl-BR-5WV" secondAttribute="centerY" constant="180" id="9ry-6D-P5K"/>
+                            <constraint firstItem="jod-oH-wes" firstAttribute="centerX" secondItem="iSl-BR-5WV" secondAttribute="centerX" id="YlC-2g-gbC"/>
+                            <constraint firstItem="jod-oH-wes" firstAttribute="centerY" secondItem="iSl-BR-5WV" secondAttribute="centerY" id="bjt-3O-V9t"/>
+                            <constraint firstItem="Czc-RS-Cgg" firstAttribute="centerX" secondItem="iSl-BR-5WV" secondAttribute="centerX" id="nRL-Ee-YBn"/>
+                            <constraint firstItem="RoA-rj-Q2v" firstAttribute="centerX" secondItem="iSl-BR-5WV" secondAttribute="centerX" id="sNV-kl-xsN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="TgW-XL-A3p"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="HQM-K0-Gg2"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="sru-zr-emg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SJz-8b-zDF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1470" y="0.0"/>
+            <point key="canvasLocation" x="1433" y="-319"/>
         </scene>
-        <!--Second-->
+        <!--Good Second View Controller-->
+        <scene sceneID="ddh-pU-afx">
+            <objects>
+                <viewController storyboardIdentifier="GoodSecond" id="3eC-Ux-Dxr" customClass="GoodSecondViewController" customModule="ikid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OXK-iK-mzJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="251" image="brain4" translatesAutoresizingMaskIntoConstraints="NO" id="jzS-U0-XA3">
+                                <rect key="frame" x="17.5" y="249" width="340" height="169"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="340" id="zwh-xW-iPm"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="jzS-U0-XA3" firstAttribute="centerX" secondItem="OXK-iK-mzJ" secondAttribute="centerX" id="Oye-2f-b8R"/>
+                            <constraint firstItem="jzS-U0-XA3" firstAttribute="centerY" secondItem="OXK-iK-mzJ" secondAttribute="centerY" id="ax6-nc-wbm"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="OaO-U0-aGt"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jAf-Ep-EvC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2129" y="-320"/>
+        </scene>
+        <!--Dad-->
+        <scene sceneID="mS8-tC-uy6">
+            <objects>
+                <viewController id="enL-xP-TBw" customClass="DadViewController" customModule="ikid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CNI-Ta-Acp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QDI-9A-7rx">
+                                <rect key="frame" x="313" y="543" width="32" height="30"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="switchViews:" destination="enL-xP-TBw" eventType="touchUpInside" id="XzO-ML-fjy"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="CYi-xF-EtH" firstAttribute="trailing" secondItem="QDI-9A-7rx" secondAttribute="trailing" constant="30" id="diZ-OZ-tXx"/>
+                            <constraint firstItem="CYi-xF-EtH" firstAttribute="bottom" secondItem="QDI-9A-7rx" secondAttribute="bottom" constant="45" id="ibs-pf-Db8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="CYi-xF-EtH"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Dad" id="NDM-Xb-tHn"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pZ7-I1-gEF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1" y="1012"/>
+        </scene>
+        <!--Pun-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
-                <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="ikid" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Second View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="zEq-FU-wV5">
-                                <rect key="frame" x="87" y="312" width="201.5" height="43"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by SecondViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NDk-cv-Gan">
-                                <rect key="frame" x="80" y="363" width="215" height="17"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I6u-p0-nU1">
+                                <rect key="frame" x="308" y="548" width="32" height="30"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="switchViews:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="Lmq-m3-znc"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="NDk-cv-Gan" firstAttribute="top" secondItem="zEq-FU-wV5" secondAttribute="bottom" constant="8" symbolic="YES" id="Day-4N-Vmt"/>
-                            <constraint firstItem="NDk-cv-Gan" firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="JgO-Fn-dHn"/>
-                            <constraint firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="qqM-NS-xev"/>
-                            <constraint firstAttribute="centerY" secondItem="zEq-FU-wV5" secondAttribute="centerY" id="qzY-Ky-pLD"/>
+                            <constraint firstItem="O1u-W8-tvY" firstAttribute="bottom" secondItem="I6u-p0-nU1" secondAttribute="bottom" constant="40" id="4Bl-cR-f0b"/>
+                            <constraint firstItem="O1u-W8-tvY" firstAttribute="trailing" secondItem="I6u-p0-nU1" secondAttribute="trailing" constant="35" id="j7F-su-OUh"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Pun" image="second" id="cPa-gy-q4n"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="750" y="360"/>
+        </scene>
+        <!--Pun First View Controller-->
+        <scene sceneID="2Vo-lK-lUj">
+            <objects>
+                <viewController storyboardIdentifier="PunFirst" id="swC-jW-HlN" customClass="PunFirstViewController" customModule="ikid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eqH-6s-M3B">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7bd-4u-1nd">
+                                <rect key="frame" x="60" y="313" width="255.5" height="41"/>
+                                <string key="text">Did you hear about the pessimist 
+who hates German sausage?</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="7bd-4u-1nd" firstAttribute="centerY" secondItem="eqH-6s-M3B" secondAttribute="centerY" id="Ir9-ef-qxu"/>
+                            <constraint firstItem="7bd-4u-1nd" firstAttribute="centerX" secondItem="eqH-6s-M3B" secondAttribute="centerX" id="WtD-gh-SwY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="R1N-Jy-EYo"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vv4-P6-upb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1437.5999999999999" y="359.37031484257875"/>
+        </scene>
+        <!--Pun Second View Controller-->
+        <scene sceneID="59G-Tr-Dvw">
+            <objects>
+                <viewController storyboardIdentifier="PunSecond" id="Tdi-gF-0Rb" customClass="PunSecondViewController" customModule="ikid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xeF-bu-AUb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="He always fears the Wurst." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G3T-ck-rb3">
+                                <rect key="frame" x="86" y="323" width="203.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="G3T-ck-rb3" firstAttribute="centerX" secondItem="xeF-bu-AUb" secondAttribute="centerX" id="MIv-yZ-uNd"/>
+                            <constraint firstItem="G3T-ck-rb3" firstAttribute="centerY" secondItem="xeF-bu-AUb" secondAttribute="centerY" id="bxG-A6-Oav"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ciI-Ut-H4R"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2dg-WU-F3w" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2128.8000000000002" y="358.4707646176912"/>
+        </scene>
+        <!--Dad First View Controller-->
+        <scene sceneID="aFf-Wc-IAu">
+            <objects>
+                <viewController storyboardIdentifier="DadFirst" id="M5Q-NL-FQN" customClass="DadFirstViewController" customModule="ikid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WE0-kg-AHA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dad, can you put the cat out? " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="POT-am-5eu">
+                                <rect key="frame" x="72.5" y="323" width="230" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="POT-am-5eu" firstAttribute="centerX" secondItem="WE0-kg-AHA" secondAttribute="centerX" id="90a-dk-yae"/>
+                            <constraint firstItem="POT-am-5eu" firstAttribute="centerY" secondItem="WE0-kg-AHA" secondAttribute="centerY" id="Tc3-d4-s13"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="i2g-l3-MbN"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g2F-7c-TNJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="688.79999999999995" y="1011.544227886057"/>
+        </scene>
+        <!--Dad Second View Controller-->
+        <scene sceneID="Wwl-rY-EL0">
+            <objects>
+                <viewController storyboardIdentifier="DadSecond" id="x8v-Yg-1Ei" customClass="DadSecondViewController" customModule="ikid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TXR-8k-dEn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I didn't know it was on fire." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iG2-cr-DiX">
+                                <rect key="frame" x="86" y="323" width="203" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="iG2-cr-DiX" firstAttribute="centerX" secondItem="TXR-8k-dEn" secondAttribute="centerX" id="8lI-jN-rgR"/>
+                            <constraint firstItem="iG2-cr-DiX" firstAttribute="centerY" secondItem="TXR-8k-dEn" secondAttribute="centerY" id="Qbl-jR-gJl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8rk-nH-YEe"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4vS-pq-Rzb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1409" y="1012"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -111,7 +289,7 @@
                     <connections>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
-                        <segue destination="iwX-aQ-3Zw" kind="relationship" relationship="viewControllers" id="3En-7f-ANH"/>
+                        <segue destination="enL-xP-TBw" kind="relationship" relationship="viewControllers" id="cxN-JM-Zgm"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
@@ -120,6 +298,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="brain1" width="497" height="173"/>
+        <image name="brain2" width="498" height="180"/>
+        <image name="brain3" width="496" height="157"/>
+        <image name="brain4" width="496" height="169"/>
         <image name="first" width="30" height="30"/>
         <image name="second" width="30" height="30"/>
     </resources>
