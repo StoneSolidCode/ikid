@@ -47,20 +47,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="brain1" translatesAutoresizingMaskIntoConstraints="NO" id="RoA-rj-Q2v">
-                                <rect key="frame" x="17.5" y="67" width="340" height="173"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="brain1-1" translatesAutoresizingMaskIntoConstraints="NO" id="RoA-rj-Q2v">
+                                <rect key="frame" x="17.5" y="-242.5" width="340" height="792"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="340" id="UJn-Py-Me6"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="brain3" translatesAutoresizingMaskIntoConstraints="NO" id="Czc-RS-Cgg">
-                                <rect key="frame" x="17.5" y="435" width="340" height="157"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="brain3-1" translatesAutoresizingMaskIntoConstraints="NO" id="Czc-RS-Cgg">
+                                <rect key="frame" x="17.5" y="117.5" width="340" height="792"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="340" id="Db7-3c-2Du"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="brain2" translatesAutoresizingMaskIntoConstraints="NO" id="jod-oH-wes">
-                                <rect key="frame" x="17.5" y="243.5" width="340" height="180"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="brain2-1" translatesAutoresizingMaskIntoConstraints="NO" id="jod-oH-wes">
+                                <rect key="frame" x="17.5" y="-62.5" width="340" height="792"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="340" id="zWy-ZX-IxD"/>
                                 </constraints>
@@ -90,8 +90,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="251" image="brain4" translatesAutoresizingMaskIntoConstraints="NO" id="jzS-U0-XA3">
-                                <rect key="frame" x="17.5" y="249" width="340" height="169"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="251" image="brain4-1" translatesAutoresizingMaskIntoConstraints="NO" id="jzS-U0-XA3">
+                                <rect key="frame" x="17.5" y="-62.5" width="340" height="792"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="340" id="zwh-xW-iPm"/>
                                 </constraints>
@@ -298,10 +298,10 @@ who hates German sausage?</string>
         </scene>
     </scenes>
     <resources>
-        <image name="brain1" width="497" height="173"/>
-        <image name="brain2" width="498" height="180"/>
-        <image name="brain3" width="496" height="157"/>
-        <image name="brain4" width="496" height="169"/>
+        <image name="brain1-1" width="612" height="792"/>
+        <image name="brain2-1" width="612" height="792"/>
+        <image name="brain3-1" width="612" height="792"/>
+        <image name="brain4-1" width="612" height="792"/>
         <image name="first" width="30" height="30"/>
         <image name="second" width="30" height="30"/>
     </resources>

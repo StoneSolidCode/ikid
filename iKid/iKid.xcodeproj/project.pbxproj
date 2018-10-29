@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D2A441D2187B50A00D663EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D2A441C2187B50A00D663EB /* Assets.xcassets */; };
 		9D7CA0C821840A4C00929AAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7CA0C721840A4C00929AAF /* AppDelegate.swift */; };
 		9D7CA0CA21840A4C00929AAF /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7CA0C921840A4C00929AAF /* FirstViewController.swift */; };
 		9D7CA0CC21840A4D00929AAF /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7CA0CB21840A4D00929AAF /* SecondViewController.swift */; };
 		9D7CA0CF21840A4D00929AAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D7CA0CD21840A4D00929AAF /* Main.storyboard */; };
-		9D7CA0D121840A4F00929AAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D7CA0D021840A4F00929AAF /* Assets.xcassets */; };
 		9D7CA0D421840A4F00929AAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D7CA0D221840A4F00929AAF /* LaunchScreen.storyboard */; };
 		9D7CA0DC21840AF000929AAF /* DadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7CA0DB21840AF000929AAF /* DadViewController.swift */; };
 		9D7CA0DE21840D5700929AAF /* DadFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7CA0DD21840D5700929AAF /* DadFirstViewController.swift */; };
@@ -23,12 +23,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9D2A441C2187B50A00D663EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = iKid/Assets.xcassets; sourceTree = SOURCE_ROOT; };
 		9D7CA0C421840A4C00929AAF /* ikid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ikid.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D7CA0C721840A4C00929AAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9D7CA0C921840A4C00929AAF /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		9D7CA0CB21840A4D00929AAF /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		9D7CA0CE21840A4D00929AAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		9D7CA0D021840A4F00929AAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D7CA0D321840A4F00929AAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9D7CA0D521840A4F00929AAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9D7CA0DB21840AF000929AAF /* DadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DadViewController.swift; sourceTree = "<group>"; };
@@ -70,6 +70,7 @@
 		9D7CA0C621840A4C00929AAF /* ikid */ = {
 			isa = PBXGroup;
 			children = (
+				9D2A441C2187B50A00D663EB /* Assets.xcassets */,
 				9D7CA0C721840A4C00929AAF /* AppDelegate.swift */,
 				9D7CA0C921840A4C00929AAF /* FirstViewController.swift */,
 				9D7CA0CB21840A4D00929AAF /* SecondViewController.swift */,
@@ -80,7 +81,6 @@
 				9D7CA0E721841D4B00929AAF /* PunSecondViewController.swift */,
 				9D7CA0DD21840D5700929AAF /* DadFirstViewController.swift */,
 				9D7CA0DF21840D6600929AAF /* DadSecondViewController.swift */,
-				9D7CA0D021840A4F00929AAF /* Assets.xcassets */,
 				9D7CA0D221840A4F00929AAF /* LaunchScreen.storyboard */,
 				9D7CA0D521840A4F00929AAF /* Info.plist */,
 				9D7CA0DB21840AF000929AAF /* DadViewController.swift */,
@@ -123,7 +123,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 9D7CA0BF21840A4C00929AAF /* Build configuration list for PBXProject "ikid" */;
+			buildConfigurationList = 9D7CA0BF21840A4C00929AAF /* Build configuration list for PBXProject "iKid" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -147,7 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D7CA0D421840A4F00929AAF /* LaunchScreen.storyboard in Resources */,
-				9D7CA0D121840A4F00929AAF /* Assets.xcassets in Resources */,
+				9D2A441D2187B50A00D663EB /* Assets.xcassets in Resources */,
 				9D7CA0CF21840A4D00929AAF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -349,7 +349,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9D7CA0BF21840A4C00929AAF /* Build configuration list for PBXProject "ikid" */ = {
+		9D7CA0BF21840A4C00929AAF /* Build configuration list for PBXProject "iKid" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9D7CA0D621840A4F00929AAF /* Debug */,
